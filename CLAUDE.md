@@ -44,7 +44,7 @@ export default PostItem
 ## 커밋 메시지 규칙
 
 형식: `<type>: <제목>`. type은 영어 소문자로, 제목은 한국어로 50자 이내, 마침표 없이 쓴다.
-템플릿은 `.gitmessage`에 있다.
+type 목록은 `.gitmessage`에 있다.
 
 | type | 용도 |
 |---|---|
