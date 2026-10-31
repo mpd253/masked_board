@@ -1,0 +1,187 @@
+.paper {
+  font-family: var(--sans);
+
+  &.paper {
+    background: var(--bg);
+    color: var(--text);
+  }
+
+  .title {
+    margin: 0;
+    padding: 14px 20px;
+    font-size: 15px;
+    background: var(--nav-bg);
+    color: #fff;
+  }
+
+  .body {
+    padding: 28px 28px 8px;
+    overflow-y: auto;
+  }
+
+  .avatarRow {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .avatarWrap {
+    position: relative;
+    flex-shrink: 0;
+  }
+
+  .avatar {
+    width: 88px;
+    height: 88px;
+  }
+
+  .camera {
+    position: absolute;
+    right: -6px;
+    bottom: -4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    background: var(--bg);
+    color: var(--text-h);
+    cursor: pointer;
+
+    &:focus-within {
+      outline: 2px solid var(--accent);
+    }
+  }
+
+  .cameraIcon {
+    font-size: 18px;
+  }
+
+  .fileInput {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+  }
+
+  .guide {
+    font-size: 13px;
+    word-break: keep-all;
+  }
+
+  .label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: var(--text-h);
+  }
+
+  .input {
+    display: flex;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: var(--input-bg);
+    color: var(--text-h);
+    font-family: inherit;
+    font-size: 14px;
+  }
+
+  .clear {
+    padding: 0;
+    color: var(--text);
+  }
+
+  .helper,
+  .helperEnd {
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 0 18px;
+    font-size: 12px;
+  }
+
+  .helperEnd {
+    justify-content: flex-end;
+  }
+
+  .valid {
+    color: var(--accent);
+  }
+
+  .invalid {
+    color: #ef4444;
+  }
+
+  .count {
+    color: var(--text-h);
+  }
+
+  .preferences {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .preference {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 0;
+    border-top: 1px solid var(--border);
+  }
+
+  .preferenceLabel {
+    font-size: 14px;
+    color: var(--text-h);
+  }
+
+  .option {
+    margin: 0 0 0 8px;
+
+    :global(.MuiFormControlLabel-label) {
+      font-family: inherit;
+      font-size: 13px;
+    }
+  }
+
+  .radio {
+    padding: 4px;
+    color: var(--text);
+
+    &:global(.Mui-checked) {
+      color: var(--accent);
+    }
+  }
+
+  .actions {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px;
+  }
+
+  .cancel,
+  .confirm {
+    min-width: 56px;
+    font-family: inherit;
+    font-weight: 700;
+  }
+
+  .cancel {
+    background: var(--input-bg);
+    color: var(--text-h);
+  }
+
+  .confirm {
+    background: var(--nav-bg);
+    color: #fff;
+
+    &:global(.Mui-disabled) {
+      background: var(--accent-bg);
+      color: var(--text);
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.toggle {
+  :global(.MuiSwitch-track),
+  :global(.MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track) {
+    background-color: var(--border);
+    opacity: 1;
+  }
+
+  .light,
+  .dark {
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    border-radius: 50%;
+    font-size: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+  }
+
+  .light {
+    background: #fff;
+    color: #f59e0b;
+  }
+
+  .dark {
+    background: #312e81;
+    color: #fde68a;
+  }
+}
