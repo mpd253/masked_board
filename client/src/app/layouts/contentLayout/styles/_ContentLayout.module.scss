@@ -1,0 +1,26 @@
+.body {
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr);
+  gap: 20px;
+  flex: 1;
+  margin-top: 20px;
+  padding-bottom: 40px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: minmax(0, 1fr);
+    padding-inline: 12px;
+  }
+}
+
+.content {
+  align-self: start;
+  min-height: 400px;
+  padding: 30px;
+  box-sizing: border-box;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
+}
